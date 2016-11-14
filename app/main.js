@@ -5,19 +5,16 @@
 //import './main.css';//使用require导入css文件
 //
 //render(<Greeter />, document.getElementById('root'));
-//
-//
 
 
-
+import config from './config.json';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Demo from './Greeter';
-
 import './main.css';//使用require导入css文件
 
 //render(<Greeter />, document.getElementById('root'));
-var Hello = React.createClass({
+var SetOpacity = React.createClass({
   getInitialState: function () {
     return {
       opacity: 1.0
@@ -45,8 +42,41 @@ var Hello = React.createClass({
     );
   }
 });
+ReactDOM.render(<SetOpacity/>, document.getElementById('opacity'));
 
+//创建组件
+var Input = React.createClass({
+  getInitialState: function() {
+    return {value: 'Hello!'};
+  },
+  handleChange: function(event) {
+    this.setState({value: event.target.value});
+  },
+  render: function () {
+    var value = this.state.value;
+    return (
+      <div>
+        <input type="text" value={value} onChange={this.handleChange} />
+        <p>{value}</p>
+      </div>
+    );
+  }
+});
+
+ReactDOM.render(<Input/>, document.getElementById('demo'));
+
+
+//直接渲染
+var names = [
+ "Tom", "Jerry", "Ace"
+]
 ReactDOM.render(
-  <Hello name="world"/>,
+  <div>
+    {
+      names.map(function (name, i) {
+        return <div key = {i}><span key = {i}>Hello, {name}!</span></div>
+      })
+    }
+  </div>,
   document.getElementById('example')
 );
