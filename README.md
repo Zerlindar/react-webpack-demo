@@ -1,14 +1,14 @@
 # react-webpack-demo
 react项目练习，基于webpack&amp;babel  
 本项目一直更新，还未完成，练习项目。
-    "babel-core": "^6.18.2",
+    "babel-core": "^6.18.2",   //babel核心
     "babel-loader": "^6.2.7",
     "babel-plugin-react-transform": "^2.0.2",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-react-hmre": "^1.1.1",
-    "css-loader": "^0.25.0",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "babel-preset-es2015": "^6.18.0",   //es2015
+    "babel-preset-react": "^6.16.0",    //react
+    "babel-preset-react-hmre": "^1.1.1",  //hmre
+    "css-loader": "^0.25.0",             //load css
+    "extract-text-webpack-plugin": "^1.0.1",   //plugin
     "html-webpack-plugin": "^2.24.1",
     "json-loader": "^0.5.4",
     "less-loader": "^2.2.3",
