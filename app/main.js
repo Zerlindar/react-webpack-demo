@@ -1,17 +1,18 @@
 //import React from 'react';
-//import {render} from 'react-dom';
-//import Greeter from './Greeter';
+import {render} from 'react-dom';
+import Greeter from './Greeter';
 //
 //import './main.css';//使用require导入css文件
 //
-//render(<Greeter />, document.getElementById('root'));
-
+render(<Greeter />, document.getElementById('root'));
+//
 
 import config from './config.json';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Demo from './Greeter';
 import './main.css';//使用require导入css文件
+
 
 //render(<Greeter />, document.getElementById('root'));
 var SetOpacity = React.createClass({
@@ -20,7 +21,6 @@ var SetOpacity = React.createClass({
       opacity: 1.0
     };
   },
-
   componentDidMount: function () {
     this.timer = setInterval(function () {
       var opacity = this.state.opacity;
@@ -33,7 +33,6 @@ var SetOpacity = React.createClass({
       });
     }.bind(this), 100);
   },
-
   render: function () {
     return (
       <div style={{opacity: this.state.opacity}}>
@@ -63,12 +62,12 @@ var Input = React.createClass({
   }
 });
 
-ReactDOM.render(<Input/>, document.getElementById('demo'));
+ReactDOM.render(<Input/>, document.getElementById('input'));
 
 
 //直接渲染
 var names = [
- "Tom", "Jerry", "Ace"
+ "Zerlinda", "Jerry", "Ace"
 ]
 ReactDOM.render(
   <div>
@@ -78,5 +77,5 @@ ReactDOM.render(
       })
     }
   </div>,
-  document.getElementById('example')
+  document.getElementById('name')
 );
