@@ -1,19 +1,17 @@
 //import React from 'react';
 import {render} from 'react-dom';
 import Greeter from './Greeter';
-//
-//import './main.css';//使用require导入css文件
-//
-render(<Greeter />, document.getElementById('root'));
-//
-
 import config from './config.json';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Demo from './Greeter';
 import './main.css';//使用require导入css文件
 
+//render(<Demo.Greeter />, document.getElementById('root'));
 
+
+render(<Demo />, document.getElementById('root'));
+//
 //render(<Greeter />, document.getElementById('root'));
 var SetOpacity = React.createClass({
   getInitialState: function () {

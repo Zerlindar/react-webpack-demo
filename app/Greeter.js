@@ -20,11 +20,14 @@ class Demo extends Component{
 
       <div className={styles.demo}>
         <span>
-          {config.haha}
+          dfsfdsfdsfdsfsdfsdf{config.haha}
         </span>
       </div>
     );
   }
 }
-
-export default Demo
+module.exports = {
+  Greeter: Greeter,
+  Demo: Demo
+}
+//export default Greeter     import Demo from './Greeter';   render(<Demo />, document.getElementById('root'));
