@@ -7,10 +7,10 @@ import ReactDOM from 'react-dom';
 import Demo from './Greeter';
 import './main.css';//使用require导入css文件
 
-//render(<Demo.Greeter />, document.getElementById('root'));
+render(<Demo.Greeter />, document.getElementById('root'));
 
 
-render(<Demo />, document.getElementById('root'));
+//render(<Demo />, document.getElementById('root'));
 //
 //render(<Greeter />, document.getElementById('root'));
 var SetOpacity = React.createClass({
